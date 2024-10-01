@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  archive-source:
+    image: 'archive-tool-source:latest'
+    ports:
+     - '8091:8091'
+  archive-destination:
+    image: 'archive-tool-destination:latest'
+    ports:
+      - '8092:8092'
+  archive-master:
+    image: 'archive-tool-master:latest'
+    ports:
+      - '8090:8090'
