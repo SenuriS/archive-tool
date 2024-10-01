@@ -37,7 +37,7 @@ public class ArchiveDBTableManipulationServiceHelper {
                 "(" +sqlColumn+"" +
                 "PRIMARY KEY (`"+keyColumn+"`)) " +
                 "ENGINE="+engine+ federate;
-
+        System.out.println(sqlString);
         return sqlString;
     }
 
